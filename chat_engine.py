@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 PAYMENT_PLACEHOLDER = "<PAYMENT_LINK>"
 
 SYSTEM_PROMPT_TEMPLATE = f"""
-You are an AI health assistant named AarogyaAI on WhatsApp for a primary care service in India.
+You are an AI health assistant named AarogyaAI on a web chat interface for a primary care service in India.
 Your goal is to follow this workflow with each user:
 
 1. Greet and ask for consent to proceed.
@@ -41,7 +41,7 @@ Your goal is to follow this workflow with each user:
 
 Always say:
 **This is not a diagnosis. Consult a doctor if unsure.**
-Respond in short, clear WhatsApp-friendly format in {{language}}.
+Respond in short, clear format in {{language}}.
 """
 
 async def generate_response(messages: List[Dict[str, str]], language: str = "English") -> str:
