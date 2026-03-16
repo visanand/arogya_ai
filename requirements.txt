@@ -1,5 +1,6 @@
 fastapi
 uvicorn
+aiofiles
 motor>=3.1.1
 openai
 pydantic
@@ -7,6 +8,5 @@ python-dotenv
 razorpay
 python-multipart
 certifi>=2023.7.22
-twilio>=8.0.0
 redis>=4.5.5
 langdetect

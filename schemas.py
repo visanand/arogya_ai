@@ -43,3 +43,9 @@ class Summary(BaseModel):
 
 class PaymentWebhook(BaseModel):
     payload: dict
+
+
+class WebChatPayload(BaseModel):
+    session_id: str
+    message: str
+    phone: Optional[str] = None
